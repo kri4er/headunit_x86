@@ -58,7 +58,7 @@
 
     // Log stuff:
 
-  int ena_log_extra   = 0;//1;//0;
+  int ena_log_extra   = 1;//0;
   int ena_log_verbo   = 0;//1;
   int ena_log_debug   = 1;
   int ena_log_warni   = 1;

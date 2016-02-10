@@ -657,6 +657,7 @@ if (ms_duration > 400)
       }
       logd ("OK iusb_init");
 
+#if 0
       if (iusb_best_vendor == USB_VID_GOO) {
         logd ("Already OAP/AA mode, no need to call iusb_oap_start()");
 
@@ -664,6 +665,7 @@ if (ms_duration > 400)
         logd ("  SET: iusb_state: %d (%s)", iusb_state, state_get (iusb_state));
         return (0);
       }
+#endif
 
       ret = iusb_oap_start ();
       if (ret < 0) {
